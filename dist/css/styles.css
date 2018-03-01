@@ -1,0 +1,17 @@
+header {
+  background: green; }
+
+footer {
+  background-color: yellow; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype"); }
+
+h1 {
+  color: brown;
+  font-family: "Roboto", Arial; }
+  h1:hover {
+    color: green; }
+
+/*# sourceMappingURL=styles.css.map */
