@@ -1,16 +1,7 @@
+@import 'vendors/reset';
+@import 'vendors/color';
+@import 'global/layout';
 @import 'blocs/header';
 @import 'blocs/footer';
-
-@font-face {
- font-family: "Roboto";
- src: url("../fonts/Roboto-Regular.ttf") format("truetype");
-}
-
-h1 {
-  color: brown;
-  font-family: "Roboto", Arial;
-
-  &:hover {
-    color: green;
-  }
-}
+@import 'mixins/fontface';
+@import 'mixins/media';

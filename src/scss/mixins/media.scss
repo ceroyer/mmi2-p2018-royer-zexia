@@ -1,0 +1,19 @@
+@mixin medium {
+    @media (min-width: 600px) {
+
+      body{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, auto);
+      }
+
+      header{
+        grid-column: 1 / span 3;
+        grid-row: 1;
+      }
+
+  }
+}
+
+@mixin large {
+
+}
