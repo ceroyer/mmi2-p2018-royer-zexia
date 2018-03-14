@@ -2,3 +2,8 @@ header {
   height: 75px;
   background: green;
 }
+
+@include medium{
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
