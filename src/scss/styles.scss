@@ -1,7 +1,8 @@
-@import 'vendors/reset';
+@import 'mixins/media';
 @import 'vendors/color';
+@import 'mixins/fontface';
+@import 'vendors/reset';
 @import 'global/layout';
 @import 'blocs/header';
+@import 'blocs/hero';
 @import 'blocs/footer';
-@import 'mixins/fontface';
-@import 'mixins/media';
