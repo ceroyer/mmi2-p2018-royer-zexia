@@ -12,9 +12,10 @@ img {
   height: auto;
 }
 
-body{
-  @include medium{
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, auto);
-  }
+section {
+  width: 100%;
+}
+
+div{
+  width: 100%;
 }

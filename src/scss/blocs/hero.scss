@@ -1,4 +1,45 @@
-.hero{
-  height:100vh;
-  background-color: blue;
+.hero {
+  background-color: #080C3B;
+  width: 100%;
+
+  @include medium {
+    display: flex;
+    height: 80vh;
+  }
+}
+
+.hero__newsItem--primary {
+  height: 40vh;
+  background-color: #7E82B1;
+
+  @include medium {
+    display: flex;
+    height: 100%;
+    width: 65%;
+  }
+}
+
+.hero__newsItem--secondary {
+
+  & > article:first-child {
+    height: 25vh;
+    background-color: #545993;
+
+    @include medium{
+      height: 40%;
+    }
+  }
+
+  & > article:nth-child(2) {
+    height: 25vh;
+    background-color: #191E58;
+
+    @include medium{
+      height: 60%;
+    }
+  }
+
+  @include medium{
+    width: 35%;
+  }
 }
