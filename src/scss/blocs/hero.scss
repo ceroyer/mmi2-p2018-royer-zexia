@@ -25,7 +25,11 @@
     height: 25vh;
     background-color: #545993;
 
+<<<<<<< HEAD
     @include medium {
+=======
+    @include medium{
+>>>>>>> b1ecd42fbf682293696e65a729d055db71686e3a
       height: 40%;
     }
   }
@@ -34,12 +38,20 @@
     height: 25vh;
     background-color: #191E58;
 
+<<<<<<< HEAD
     @include medium {
+=======
+    @include medium{
+>>>>>>> b1ecd42fbf682293696e65a729d055db71686e3a
       height: 60%;
     }
   }
 
+<<<<<<< HEAD
   @include medium {
+=======
+  @include medium{
+>>>>>>> b1ecd42fbf682293696e65a729d055db71686e3a
     width: 35%;
   }
 }
