@@ -1,13 +1,34 @@
 .events {
-  height: 70vh;
+
+  div{
+      height: 40vh;
+  }
+
+  @include medium {
+    display: flex;
+  }
+}
+
+.events__video {
+  background-color: pink;
+
+  @include medium {
+    width: 30%;
+  }
 }
 
 .events__dates {
   background-color: violet;
-  height: 50%;
+
+  @include medium {
+    width: 50%;
+  }
 }
 
 .events__score {
   background-color: lime;
-  height: 50%;
+
+  @include medium {
+    width: 30%;
+  }
 }

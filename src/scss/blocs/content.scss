@@ -1,9 +1,30 @@
+.content{
+
+  @include medium {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    padding-right: 8vw;
+    padding-left: 8vw;
+  }
+}
+
 .content__news {
   background-color: red;
   height: 100vh;
+
+  @include medium {
+    height: 100%;
+    width: 60%;
+  }
 }
 
 .content__community {
   background-color: grey;
-  height: 40vh;
+  height: 100vh;
+
+  @include medium {
+    height: 100%;
+    width: 30%;
+  }
 }
