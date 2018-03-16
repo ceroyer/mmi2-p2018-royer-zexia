@@ -46,43 +46,29 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: Lato;
-  src: url("lato-regular-webfont.eot");
-  src: url("lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("lato-regular-webfont.woff") format("woff"), url("lato-regular-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: Lato;
-  src: url("lato-italic-webfont.eot");
-  src: url("lato-italic-webfont.eot?#iefix") format("embedded-opentype"), url("lato-italic-webfont.woff") format("woff"), url("lato-italic-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic; }
+  font-family: "Badonk";
+  src: url("../fonts/badonk-a-donk2.otf") format("truetype"); }
 
 @font-face {
-  font-family: Lato;
-  src: url("lato-bold-webfont.eot");
-  src: url("lato-bold-webfont.eot?#iefix") format("embedded-opentype"), url("lato-bold-webfont.woff") format("woff"), url("lato-bold-webfont.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: Lato;
-  src: url("lato-bolditalic-webfont.eot");
-  src: url("lato-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("lato-bolditalic-webfont.woff") format("woff"), url("lato-bolditalic-webfont.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic; }
+  font-family: "Avengeance";
+  src: url("../fonts/AVENGEANCE.ttf") format("truetype"), url("../fonts/AVENGEANCE.otf") format("truetype"); }
 
 * {
   box-sizing: border-box; }
 
 html, body {
   min-width: 320px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background: #272422; }
 
 img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  object-fit: cover; }
 
 section {
   width: 100%; }
@@ -91,32 +77,37 @@ div {
   width: 100%; }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
   width: 100%;
   height: 10vh;
-  background: green;
-  border-bottom: 4px solid yellow; }
+  background: #272222;
+  border-bottom: 4px solid #D258B4; }
+  @media (min-width: 600px) {
+    header {
+      display: flex;
+      align-items: center;
+      height: 16vh; } }
+
+@media (min-width: 600px) {
+  .header__logo {
+    display: flex;
+    align-items: center;
+    padding-left: 3vw;
+    height: 90%;
+    /*TEXT*/
+    font-family: "Avengeance";
+    font-size: 2rem;
+    color: #FBFCFA; }
+    .header__logo img {
+      height: 100%; } }
 
 .hero {
-  margin-top: 10vh;
   background-color: #080C3B;
   width: 100%;
-  border-bottom: 4px solid yellow; }
+  border-bottom: 4px solid #D258B4; }
   @media (min-width: 600px) {
     .hero {
       display: flex;
       height: 80vh; } }
-
-@media (min-width: 600px) {
-  .hero__social {
-    order: 4;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 5%; } }
 
 .hero__newsItem--primary {
   height: 40vh;
