@@ -5,37 +5,36 @@
   @include medium {
     display: flex;
     justify-content: space-between;
-    height: 100vh;
+    height: 80vh;
     padding-right: 8vw;
     padding-left: 8vw;
   }
-}
-
-.content__news {
-  background-color: rgba(255,255,255,0.2);
-  height: 100vh;
 
   h2{
     font-size: 2rem;
     text-transform: uppercase;
     margin: 3vh 0px;
     text-align: center;
+    font-weight: bold;
 
     @include medium {
       text-align: left;
       margin: 0 0 2% 0;
     }
   }
+  
+}
+
+.content__news {
 
   @include medium {
-    height: 100%;
     width: 60%;
   }
 }
 
 .content__community {
   background-color: grey;
-  height: 100vh;
+  height: 100%;
 
   @include medium {
     height: 100%;

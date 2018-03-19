@@ -12,7 +12,7 @@ header {
   }
 }
 
-.header__logo{
+.header__logo {
   height: 90%;
 
   img{
@@ -31,5 +31,20 @@ header {
     img{
       height: 100%;
     }
+  }
+}
+
+.header__nav {
+  a{
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.header__social {
+  a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
   }
 }
