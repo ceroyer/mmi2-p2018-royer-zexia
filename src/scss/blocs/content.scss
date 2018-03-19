@@ -1,4 +1,6 @@
 .content{
+  margin-top: 1.2vh;
+  color: $iceberg-white;
 
   @include medium {
     display: flex;
@@ -10,8 +12,20 @@
 }
 
 .content__news {
-  background-color: red;
+  background-color: rgba(255,255,255,0.2);
   height: 100vh;
+
+  h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 3vh 0px;
+    text-align: center;
+
+    @include medium {
+      text-align: left;
+      margin: 0 0 2% 0;
+    }
+  }
 
   @include medium {
     height: 100%;

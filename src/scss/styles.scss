@@ -5,6 +5,11 @@
 @import 'global/layout';
 @import 'blocs/header';
 @import 'blocs/hero';
-@import 'blocs/events';
+/* WRAP */
+@import 'blocs/wrap';
+@import 'blocs/event';
+@import 'blocs/tournament';
+/* END WRAP */
 @import 'blocs/content';
+@import 'blocs/news';
 @import 'blocs/footer';

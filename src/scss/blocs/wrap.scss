@@ -1,0 +1,61 @@
+.wrap {
+  color: $iceberg-white;
+  border-bottom: 1px solid $whiteOpacity-01;
+
+  & > div {
+      height: 40vh;
+  }
+
+  .header{
+    height: 12%;
+
+    h2 {
+      background: url('https://www.fnatic.com/build/images/patterns/box-header.png') 100% 100%, rgba(0,0,0,0.2);
+      background-repeat: no-repeat;
+      background-size: 40%;
+      padding: 5% 0% 5% 4%;
+      text-transform: uppercase;
+    }
+  }
+
+  .inner{
+    padding: 7% 9%;
+  }
+
+  @include medium {
+    display: flex;
+  }
+}
+
+.wrap__video {
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include medium {
+    width: 30%;
+  }
+}
+
+.wrap__events {
+
+  span {
+      margin-right: 1.5%;
+  }
+
+  @include medium {
+    display: flex;
+    width: 50%;
+    border-left: 1px solid $whiteOpacity-01;
+    border-right: 1px solid $whiteOpacity-01;
+  }
+}
+
+.wrap__score {
+
+  @include medium {
+    width: 30%;
+  }
+}

@@ -108,78 +108,169 @@ header {
   background-color: #080C3B;
   width: 100%;
   border-bottom: 4px solid #D258B4; }
+  .hero img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
   @media (min-width: 600px) {
     .hero {
       display: flex;
-      height: 80vh; } }
+      height: 75vh; } }
 
-.hero__newsItem--primary {
+.hero__newsItem:first-child {
   height: 40vh;
   background-color: #7E82B1; }
   @media (min-width: 600px) {
-    .hero__newsItem--primary {
+    .hero__newsItem:first-child {
       display: flex;
       height: 100%;
       width: 65%; } }
 
-.hero__newsItem--secondary img {
-  height: 100%;
-  width: 100%; }
-
-.hero__newsItem--secondary > article:first-child {
-  height: 25vh;
+.hero__newsItem:nth-child(2) > article:first-child {
+  height: 30vh;
   background-color: #545993; }
   @media (min-width: 600px) {
-    .hero__newsItem--secondary > article:first-child {
+    .hero__newsItem:nth-child(2) > article:first-child {
       height: 40%; } }
 
-.hero__newsItem--secondary > article:last-child {
-  height: 25vh;
+.hero__newsItem:nth-child(2) > article:last-child {
+  height: 30vh;
   background-color: #191E58; }
   @media (min-width: 600px) {
-    .hero__newsItem--secondary > article:last-child {
+    .hero__newsItem:nth-child(2) > article:last-child {
       height: 60%; } }
 
 @media (min-width: 600px) {
-  .hero__newsItem--secondary {
+  .hero__newsItem:nth-child(2) {
     width: 35%; } }
 
-.events div {
-  height: 40vh; }
+/* WRAP */
+.wrap {
+  color: #FBFCFA;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  .wrap > div {
+    height: 40vh; }
+  .wrap .header {
+    height: 12%; }
+    .wrap .header h2 {
+      background: url("https://www.fnatic.com/build/images/patterns/box-header.png") 100% 100%, rgba(0, 0, 0, 0.2);
+      background-repeat: no-repeat;
+      background-size: 40%;
+      padding: 5% 0% 5% 4%;
+      text-transform: uppercase; }
+  .wrap .inner {
+    padding: 7% 9%; }
+  @media (min-width: 600px) {
+    .wrap {
+      display: flex; } }
+
+.wrap__video iframe {
+  width: 100%;
+  height: 100%; }
 
 @media (min-width: 600px) {
-  .events {
-    display: flex; } }
+  .wrap__video {
+    width: 30%; } }
 
-.events__video {
-  background-color: pink; }
-  @media (min-width: 600px) {
-    .events__video {
-      width: 30%; } }
+.wrap__events span {
+  margin-right: 1.5%; }
 
-.events__dates {
-  background-color: violet; }
+@media (min-width: 600px) {
+  .wrap__events {
+    display: flex;
+    width: 50%;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1); } }
+
+@media (min-width: 600px) {
+  .wrap__score {
+    width: 30%; } }
+
+.event {
+  background-color: #272422;
+  font-size: .875rem; }
   @media (min-width: 600px) {
-    .events__dates {
+    .event {
+      width: 50%;
+      border-right: 1px solid rgba(255, 255, 255, 0.1); } }
+
+.event__item {
+  display: block;
+  height: 5em;
+  width: 100%;
+  padding: 6px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.event__itemDate {
+  color: #D258B4; }
+
+.event__itemGame img {
+  width: auto;
+  height: 16px;
+  filter: invert(1); }
+
+.event__itemTitle {
+  text-overflow: ellipsis; }
+
+.tournament {
+  background-color: #272422;
+  font-size: .875rem; }
+  @media (min-width: 600px) {
+    .tournament {
       width: 50%; } }
 
-.events__score {
-  background-color: lime; }
-  @media (min-width: 600px) {
-    .events__score {
-      width: 30%; } }
+.tournament__item {
+  display: block;
+  height: 1em;
+  width: 100%;
+  padding: 6px 0; }
 
-@media (min-width: 600px) {
-  .content {
-    display: flex;
-    justify-content: space-between;
-    height: 100vh;
-    padding-right: 8vw;
-    padding-left: 8vw; } }
+.tournament__itemDate {
+  font-variant: small-caps; }
+  .tournament__itemDate:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    margin-right: .5rem;
+    width: 5px;
+    height: 5px;
+    background: #cb3837;
+    border-radius: 50%; }
+
+.tournament__itemGame img {
+  width: auto;
+  height: 16px;
+  filter: invert(1); }
+
+.tournament__itemTitle {
+  text-overflow: ellipsis; }
+
+/* END WRAP */
+.content {
+  margin-top: 1.2vh;
+  color: #FBFCFA; }
+  @media (min-width: 600px) {
+    .content {
+      display: flex;
+      justify-content: space-between;
+      height: 100vh;
+      padding-right: 8vw;
+      padding-left: 8vw; } }
 
 .content__news {
-  background-color: red;
+  background-color: rgba(255, 255, 255, 0.2);
   height: 100vh; }
+  .content__news h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 3vh 0px;
+    text-align: center; }
+    @media (min-width: 600px) {
+      .content__news h2 {
+        text-align: left;
+        margin: 0 0 2% 0; } }
   @media (min-width: 600px) {
     .content__news {
       height: 100%;
@@ -192,6 +283,42 @@ header {
     .content__community {
       height: 100%;
       width: 30%; } }
+
+@media (min-width: 600px) {
+  .news {
+    display: flex; } }
+
+.news__thumb img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+@media (min-width: 600px) {
+  .news__thumb {
+    width: 40%;
+    margin-right: 1%; } }
+
+.news__desc {
+  text-align: justify;
+  padding: 5%; }
+  .news__desc h3 {
+    margin-bottom: 3%;
+    font-size: 1.8rem; }
+  @media (min-width: 600px) {
+    .news__desc {
+      width: 60%;
+      padding: 1%; } }
+
+.news__btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 2; }
 
 .footer__partners {
   background-color: yellow;

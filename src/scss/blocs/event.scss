@@ -1,0 +1,34 @@
+.event{
+  background-color: $background-2;
+  font-size: .875rem;
+
+  @include medium {
+    width: 50%;
+    border-right: 1px solid $whiteOpacity-01;
+  }
+}
+
+.event__item{
+    display: block;
+    height: 5em;
+    width: 100%;
+    padding: 6px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.event__itemDate{
+    color: $pastel-pink;
+}
+
+.event__itemGame{
+  img{
+    width: auto;
+    height: 16px;
+    filter: invert(1);
+  }
+}
+
+.event__itemTitle{
+  text-overflow: ellipsis;
+}
