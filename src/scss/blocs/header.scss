@@ -3,10 +3,13 @@ header {
   height: 10vh;
   background: $background;
   border-bottom: 2px solid $pastel-pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @include medium {
-    display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
     height: 16vh;
     border-bottom: 4px solid $pastel-pink;
   }
@@ -15,8 +18,12 @@ header {
 .header__logo {
   height: 90%;
 
-  img{
+  img {
     height: 100%;
+  }
+
+  span{
+    display: none;
   }
 
   @include medium {
@@ -27,17 +34,31 @@ header {
     font-family: "Avengeance";
     font-size: 2rem;
     color: $iceberg-white;
+    width: 30%;
 
-    img{
+    img {
       height: 100%;
+    }
+
+    span{
+      display: inline-block;
     }
   }
 }
 
 .header__nav {
+
   a{
-    color: white;
+    color: $grey-text;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  @include medium{
+      width: 25%;
+      display: flex;
+      justify-content: space-evenly;
   }
 }
 
@@ -46,5 +67,16 @@ header {
     color: white;
     text-decoration: none;
     font-size: 2rem;
+
+    @include medium{
+      margin: 0 2%;
+    }
+  }
+
+  @include medium{
+      width: 45%;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 3vw;
   }
 }
