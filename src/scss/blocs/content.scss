@@ -11,18 +11,18 @@
   }
 
   h2{
+    margin: 3vh 0px;
     font-size: 2rem;
     text-transform: uppercase;
-    margin: 3vh 0px;
     text-align: center;
     font-weight: bold;
 
     @include medium {
-      text-align: left;
       margin: 0 0 2% 0;
+      text-align: left;
     }
   }
-  
+
 }
 
 .content__news {
@@ -33,8 +33,8 @@
 }
 
 .content__community {
-  background-color: grey;
   height: 100%;
+  background-color: grey;
 
   @include medium {
     height: 100%;

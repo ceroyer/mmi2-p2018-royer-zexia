@@ -1,11 +1,11 @@
-header {
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 10vh;
   background: $background;
   border-bottom: 2px solid $pastel-pink;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
   @include medium {
     flex-direction: row;
@@ -30,11 +30,11 @@ header {
     display: flex;
     align-items: center;
     padding-left: 3vw;
-    /*TEXT*/
-    font-family: "Avengeance";
-    font-size: 2rem;
-    color: $iceberg-white;
     width: 30%;
+    /*TEXT*/
+    font-size: 2rem;
+    font-family: "Avengeance";
+    color: $iceberg-white;
 
     img {
       height: 100%;
@@ -48,17 +48,17 @@ header {
 
 .header__nav {
   a{
-    color: $grey-text;
-    text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
     text-transform: uppercase;
+    text-decoration: none;
+    color: $grey-text;
 
     @include medium{
-      height: 100%;
       display: flex;
       align-items: center;
       flex-wrap: nowrap;
+      height: 100%;
       padding: 0 2%;
 
       &:hover{
@@ -69,18 +69,18 @@ header {
   }
 
   @include medium{
-      height: 100%;
-      width: 50%;
-      display: flex;
-      justify-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    width: 50%;
   }
 }
 
 .header__social {
   a{
+    font-size: 2rem;
     color: white;
     text-decoration: none;
-    font-size: 2rem;
 
     @include medium{
       margin: 0 2%;
@@ -88,9 +88,9 @@ header {
   }
 
   @include medium{
-      width: 25%;
-      display: flex;
-      justify-content: space-evenly;
-      padding-right: 3vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 3vw;
+    width: 25%;
   }
 }

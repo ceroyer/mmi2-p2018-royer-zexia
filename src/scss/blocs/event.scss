@@ -1,6 +1,6 @@
 .event{
-  background-color: $background-2;
   font-size: .875rem;
+  background-color: $background-2;
 
   @include medium {
     width: 50%;
@@ -9,15 +9,15 @@
 }
 
 .event__item{
-    display: block;
-    width: 100%;
-    padding: 9px 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  display: block;
+  width: 100%;
+  padding: 9px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .event__itemDate{
-    color: $pastel-pink;
+  color: $pastel-pink;
 }
 
 .event__itemGame{

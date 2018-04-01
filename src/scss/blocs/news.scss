@@ -15,10 +15,10 @@
   }
 
   @include medium {
-      width: 40%;
-      margin-right: 1%;
-      border-left: 4px solid $logo-pink;
-      padding-left: 6px;
+    width: 40%;
+    margin-right: 1%;
+    border-left: 4px solid $logo-pink;
+    padding-left: 6px;
   }
 }
 
@@ -39,25 +39,25 @@
   }
 
   a {
+    align-self: flex-end;
     margin-top: 3%;
     color: $pastel-pink;
-    align-self: flex-end;
   }
 
   @include medium {
-    width: 60%;
     padding: 1%;
+    width: 60%;
   }
 }
 
 .news__btn {
+  padding: 10px 20px 10px 20px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0px;
   color: #ffffff;
   font-size: 14px;
   background: #d9344a;
-  padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
 
