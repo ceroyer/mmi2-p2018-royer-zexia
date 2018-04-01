@@ -1,0 +1,394 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Badonk";
+  src: url("../fonts/badonk-a-donk2.otf") format("truetype"); }
+
+@font-face {
+  font-family: "Avengeance";
+  src: url("../fonts/AVENGEANCE.ttf") format("truetype"), url("../fonts/AVENGEANCE.otf") format("truetype"); }
+
+* {
+  box-sizing: border-box; }
+
+html, body {
+  min-width: 320px;
+  overflow-x: hidden;
+  background: #272422;
+  font-family: 'Libre Franklin', sans-serif; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; }
+
+section {
+  width: 100%; }
+
+div {
+  width: 100%; }
+
+header {
+  width: 100%;
+  height: 10vh;
+  background: #272222;
+  border-bottom: 2px solid #D258B4;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 600px) {
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 16vh;
+      border-bottom: 4px solid #D258B4; } }
+
+.header__logo {
+  height: 90%; }
+  .header__logo img {
+    height: 100%; }
+  .header__logo span {
+    display: none; }
+  @media (min-width: 600px) {
+    .header__logo {
+      display: flex;
+      align-items: center;
+      padding-left: 3vw;
+      /*TEXT*/
+      font-family: "Avengeance";
+      font-size: 2rem;
+      color: #FBFCFA;
+      width: 30%; }
+      .header__logo img {
+        height: 100%; }
+      .header__logo span {
+        display: inline-block; } }
+
+.header__nav a {
+  color: #838383;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase; }
+  @media (min-width: 600px) {
+    .header__nav a {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      padding: 0 2%; }
+      .header__nav a:hover {
+        background-color: #302929;
+        color: #FBFCFA; } }
+
+@media (min-width: 600px) {
+  .header__nav {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start; } }
+
+.header__social a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem; }
+  @media (min-width: 600px) {
+    .header__social a {
+      margin: 0 2%; } }
+
+@media (min-width: 600px) {
+  .header__social {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 3vw; } }
+
+.hero {
+  background-color: #080C3B;
+  width: 100%;
+  border-bottom: 4px solid #D258B4; }
+  .hero img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  @media (min-width: 600px) {
+    .hero {
+      display: flex;
+      height: 75vh; } }
+
+.hero__newsItem:first-child {
+  height: 40vh;
+  background-color: #7E82B1; }
+  @media (min-width: 600px) {
+    .hero__newsItem:first-child {
+      display: flex;
+      height: 100%;
+      width: 65%; } }
+
+.hero__newsItem:nth-child(2) > article:first-child {
+  height: 30vh;
+  background-color: #545993; }
+  @media (min-width: 600px) {
+    .hero__newsItem:nth-child(2) > article:first-child {
+      height: 40%; } }
+
+.hero__newsItem:nth-child(2) > article:last-child {
+  height: 30vh;
+  background-color: #191E58; }
+  @media (min-width: 600px) {
+    .hero__newsItem:nth-child(2) > article:last-child {
+      height: 60%; } }
+
+@media (min-width: 600px) {
+  .hero__newsItem:nth-child(2) {
+    width: 35%; } }
+
+/* WRAP */
+.wrap {
+  color: #FBFCFA;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  .wrap > div {
+    height: 40vh; }
+  .wrap .header {
+    height: 12%; }
+    .wrap .header h2 {
+      background: url("/img/patterns/test.png") 100% 100%, rgba(0, 0, 0, 0.2);
+      background-repeat: no-repeat;
+      background-size: 40%;
+      padding: 5% 0% 5% 4%;
+      text-transform: uppercase; }
+  .wrap .inner {
+    padding: 7% 9%; }
+  @media (min-width: 600px) {
+    .wrap {
+      display: flex; } }
+
+.wrap__video iframe {
+  width: 100%;
+  height: 100%; }
+
+@media (min-width: 600px) {
+  .wrap__video {
+    width: 30%; } }
+
+.wrap__events span {
+  margin-right: 1.5%; }
+
+@media (min-width: 600px) {
+  .wrap__events {
+    display: flex;
+    width: 45%;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1); } }
+
+@media (min-width: 600px) {
+  .wrap__score {
+    width: 25%; } }
+
+.event {
+  background-color: #272422;
+  font-size: .875rem; }
+  @media (min-width: 600px) {
+    .event {
+      width: 50%;
+      border-right: 1px solid rgba(255, 255, 255, 0.1); } }
+
+.event__item {
+  display: block;
+  width: 100%;
+  padding: 9px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.event__itemDate {
+  color: #D258B4; }
+
+.event__itemGame img {
+  width: auto;
+  height: 16px;
+  filter: invert(1); }
+
+.event__itemTitle {
+  text-overflow: ellipsis; }
+
+.tournament {
+  background-color: #272422;
+  font-size: .875rem; }
+  @media (min-width: 600px) {
+    .tournament {
+      width: 50%; } }
+
+.tournament__item {
+  display: block;
+  width: 100%;
+  padding: 9px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.tournament__itemDate {
+  font-variant: small-caps; }
+  .tournament__itemDate:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    margin-right: .5rem;
+    width: 5px;
+    height: 5px;
+    background: #cb3837;
+    border-radius: 50%; }
+
+.tournament__itemGame img {
+  width: auto;
+  height: 16px;
+  filter: invert(1); }
+
+.tournament__itemTitle {
+  text-overflow: ellipsis; }
+
+/* END WRAP */
+.content {
+  margin-top: 1.2vh;
+  color: #FBFCFA; }
+  @media (min-width: 600px) {
+    .content {
+      display: flex;
+      justify-content: space-between;
+      height: 80vh;
+      padding-right: 8vw;
+      padding-left: 8vw; } }
+  .content h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 3vh 0px;
+    text-align: center;
+    font-weight: bold; }
+    @media (min-width: 600px) {
+      .content h2 {
+        text-align: left;
+        margin: 0 0 2% 0; } }
+
+@media (min-width: 600px) {
+  .content__news {
+    width: 60%; } }
+
+.content__community {
+  background-color: grey;
+  height: 100%; }
+  @media (min-width: 600px) {
+    .content__community {
+      height: 100%;
+      width: 30%; } }
+
+.news {
+  margin-bottom: 5vh; }
+  @media (min-width: 600px) {
+    .news {
+      display: flex;
+      margin-bottom: 4%; } }
+
+.news__thumb img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+@media (min-width: 600px) {
+  .news__thumb {
+    width: 40%;
+    margin-right: 1%;
+    border-left: 4px solid #FF48D0;
+    padding-left: 6px; } }
+
+.news__desc {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 5%; }
+  .news__desc h3 {
+    margin-bottom: 4vh;
+    font-size: 1.8rem;
+    font-weight: bold; }
+    @media (min-width: 600px) {
+      .news__desc h3 {
+        margin-bottom: 3%; } }
+  .news__desc a {
+    margin-top: 3%;
+    color: #D258B4;
+    align-self: flex-end; }
+  @media (min-width: 600px) {
+    .news__desc {
+      width: 60%;
+      padding: 1%; } }
+
+.news__btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  color: #ffffff;
+  font-size: 14px;
+  background: #d9344a;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none; }
+
+.news__btn:hover {
+  background: #fa255a;
+  text-decoration: none; }
+
+.footer__partners {
+  background-color: yellow;
+  height: 30vh; }
+
+.footer__menu {
+  background-color: orange;
+  height: 30vh; }
+
+/*# sourceMappingURL=styles.css.map */
