@@ -1,9 +1,138 @@
+// FOOTER PARTNERS
+
 .footer__partners {
-  height: 30vh;
-  background-color: yellow;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  background-color: tint(black,8%);
+  border-top: 1px solid tint(black,15%);
+
+  a{
+    padding: 20px 40px;
+    width: 50%;
+
+    @include medium {
+      width: 20%;
+    }
+
+    @include large {
+      width: 15%;
+    }
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  @include medium{
+    justify-content: center;
+    align-items: center;
+  }
 }
 
+// FOOTER MENU
+
 .footer__menu {
-  height: 30vh;
-  background-color: orange;
+  background-color: tint(black,5%);
+  border-top: 4px solid tint(black,12%);
+
+  hr  {
+    width: 96%;
+    height: 1px;
+    border: none;
+    background-color: tint(black,12%);
+    color: tint(black,12%);
+  }
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height:80%;
+  max-width: 80%;
+
+  img {
+    display: none;
+
+    @include medium {
+      display: inline-block;
+      height: 20%;
+      width: 15%;
+    }
+  }
+}
+
+.footer__wrapColumn {
+  h4 {
+    margin-bottom: 0.8rem;
+    line-height: 25px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: $iceberg-white;
+  }
+
+  li {
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+  }
+
+  a {
+    color: tint(black,25%);
+    text-decoration: none;
+
+    &:hover {
+      color: tint(black,75%);
+    }
+  }
+
+}
+
+/* Footer policy */
+
+.footer__policy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 95%;
+  height: 20%;
+  color: $iceberg-white;
+  font-size: .75rem;
+
+  p {
+    margin-bottom: 1vh;
+  }
+
+  @include medium {
+    flex-direction: row;
+    justify-content: space-between;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footer__policyTerms {
+
+  a {
+    margin-left: 1rem;
+    color: tint(black,25%);
+    text-decoration: none;
+
+    &:hover {
+      color: tint(black,75%);
+    }
+  }
 }

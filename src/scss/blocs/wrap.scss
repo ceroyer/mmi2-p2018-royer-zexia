@@ -2,22 +2,6 @@
   color: $iceberg-white;
   border-bottom: 1px solid $whiteOpacity-01;
 
-  & > div {
-      height: 40vh;
-  }
-
-  .header{
-    height: 12%;
-
-    h2 {
-      padding: 5% 0% 5% 4%;
-      background: url('/img/patterns/test.png') 100% 100%, rgba(0,0,0,0.2);
-      background-repeat: no-repeat;
-      background-size: 40%;
-      text-transform: uppercase;
-    }
-  }
-
   .inner{
     padding: 7% 9%;
   }
@@ -27,7 +11,20 @@
   }
 }
 
+.wrap__header{
+  height: 12%;
+
+  h2 {
+    padding: 5% 0% 5% 4%;
+    background: url('/img/patterns/test.png') 100% 100%, rgba(0,0,0,0.2);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    text-transform: uppercase;
+  }
+}
+
 .wrap__video {
+  height: 40vh;
 
   iframe {
     width: 100%;
@@ -40,6 +37,7 @@
 }
 
 .wrap__events {
+  overflow-y: hidden;
 
   span {
       margin-right: 1.5%;
@@ -48,6 +46,7 @@
   @include medium {
     display: flex;
     width: 45%;
+    height: 40vh;
     border-left: 1px solid $whiteOpacity-01;
     border-right: 1px solid $whiteOpacity-01;
   }
@@ -57,5 +56,6 @@
 
   @include medium {
     width: 25%;
+    height: 40vh;
   }
 }
