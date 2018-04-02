@@ -1,7 +1,8 @@
 @import 'vendors/reset';
+@import 'vendors/color';
 @import 'mixins/general';
 @import 'mixins/media';
-@import 'vendors/color';
+@import 'mixins/burger';
 @import 'mixins/fontface';
 @import 'global/layout';
 @import 'blocs/header';
@@ -13,4 +14,5 @@
 /* END WRAP */
 @import 'blocs/content';
 @import 'blocs/news';
+@import 'blocs/form';
 @import 'blocs/footer';

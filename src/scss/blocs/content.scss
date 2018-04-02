@@ -4,8 +4,14 @@
 
   @include medium {
     display: flex;
+    flex-direction: column;
+    padding-right: 2vw;
+    padding-left: 2vw;
+  }
+
+  @include large {
+    flex-direction: row;
     justify-content: space-between;
-    height: 80vh;
     padding-right: 8vw;
     padding-left: 8vw;
   }
@@ -20,6 +26,7 @@
     @include medium {
       margin: 0 0 2% 0;
       text-align: left;
+      width: 100%;
     }
   }
 
@@ -28,16 +35,47 @@
 .content__news {
 
   @include medium {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @include large {
     width: 60%;
   }
 }
 
 .content__community {
-  height: 100%;
-  background-color: grey;
+  padding: 10% 5%;
+  border-top: 1px solid tint($background, 10%);
 
   @include medium {
-    height: 100%;
-    width: 30%;
+    padding: 0% 2%;
+    border-top: none;
+    border-left: 1px solid tint($background, 10%);
+  }
+
+  @include large {
+    width: 32%;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10%;
+
+    input[type=email] {
+      width: 70%;
+    }
+  }
+
+  &>div {
+    margin-bottom: 2%;
+  }
+
+  img:hover{
+    filter: brightness(1.5);
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
   }
 }

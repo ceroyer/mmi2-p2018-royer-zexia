@@ -8,6 +8,7 @@
 
   @include medium {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -32,7 +33,14 @@
   }
 
   @include medium {
-    width: 30%;
+    order: 1;
+    height: 30vh;
+    width: 100%;
+  }
+
+  @include large {
+    height: 40vh;
+    width: 20%;
   }
 }
 
@@ -44,18 +52,30 @@
   }
 
   @include medium {
+    order: 1;
     display: flex;
-    width: 45%;
-    height: 40vh;
+    width: 70%;
+    height: 30vh;
     border-left: 1px solid $whiteOpacity-01;
     border-right: 1px solid $whiteOpacity-01;
+    overflow-y: inherit;
+  }
+
+  @include large {
+    height: 40vh;
+    width: 60%;
   }
 }
 
 .wrap__score {
 
   @include medium {
-    width: 25%;
+    order:2;
+    width: 30%;
+  }
+
+  @include large {
+    width: 20%;
     height: 40vh;
   }
 }

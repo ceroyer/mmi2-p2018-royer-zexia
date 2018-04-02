@@ -1,0 +1,27 @@
+.form {
+  width: 100%;
+}
+
+.form__input {
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid $pastel-pink;
+  background-color: $background;
+  color: $iceberg-white;
+}
+
+.form__submit {
+  padding: 2% 4%;
+  border: 1px solid $pastel-pink;
+  border-radius: 3px;
+  background-color: $background;
+  color: $pastel-pink;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+
+  &:hover{
+    background-color: $pastel-pink;
+    color: $iceberg-white;
+  }
+}

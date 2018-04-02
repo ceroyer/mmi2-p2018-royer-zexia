@@ -9,7 +9,7 @@
   background-color: tint(black,8%);
   border-top: 1px solid tint(black,15%);
 
-  a{
+  a {
     padding: 20px 40px;
     width: 50%;
 
@@ -17,17 +17,17 @@
       width: 20%;
     }
 
-    @include large {
+    @include medium {
       width: 15%;
     }
   }
 
-  img{
+  img {
     max-width: 100%;
     height: auto;
   }
 
-  @include medium{
+  @include medium {
     justify-content: center;
     align-items: center;
   }
@@ -39,7 +39,7 @@
   background-color: tint(black,5%);
   border-top: 4px solid tint(black,12%);
 
-  hr  {
+  hr {
     width: 96%;
     height: 1px;
     border: none;
