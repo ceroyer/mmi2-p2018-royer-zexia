@@ -1,21 +1,29 @@
+document.addEventListener("DOMContentLoaded", function(event) {
 
-import { User } from './user';
+// HEADER RESIZE
 
-console.log('Welcome !');
+  let $header = document.querySelector('.header');
 
-let name = 'Bastien';
-const user = new User(name);
+  if( !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ) {
+    document.addEventListener("scroll", function(){
+      if(document.querySelector('html').scrollTop > 100){
+        $header.classList.remove("header--large");
+        $header.classList.add("header--small");
+      }
+      else {
+        $header.classList.add("header--large");
+        $header.classList.remove("header--small");
+      }
+    });
+  }
 
-/*
-(function(){
-  var headerBurger = document.querySelector('.header__burger');
+// BURGER MENU
 
-  headerBurger.addEventListener("click", function(){
-    alert('yo');
-    headerBurger.classList.toggle('clicked');
-    document.querySelector('.header').classList.toggle('show');
-    document.querySelector('body').classList.toggle('overflow');
+  let $headerBurger = document.querySelector('.header__burger');
+
+  $headerBurger.addEventListener("click", function(){
+    $headerBurger.classList.toggle('clicked');
+    document.querySelector('.header').classList.toggle('header--show');
   });
 
-})();
-*/
+});

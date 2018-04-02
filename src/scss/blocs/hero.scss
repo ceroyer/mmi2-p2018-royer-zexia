@@ -30,14 +30,18 @@
   a {
     color: $logo-pink;
     text-decoration: none;
+    font-size: 0.8em;
+
+    @include large {
+      font-size: 1em;
+    }
 
     &:hover {
       color: tint($logo-pink, 20%);
 
       i {
         transform: translateX(70%);
-        transition-duration: 0.2s;
-        -moz-transition-duration: 0.2s;
+        @include transition(all .2s ease);
       }
     }
   }
@@ -80,6 +84,7 @@
 .hero__newsItem:nth-child(2) {
 
   .hero__newsItemDesc {
+
 
     @include medium {
       h3 {
@@ -141,7 +146,7 @@
 
     .hero__newsItemDesc {
       width: 100%;
-      top: 100%;
+      top: 99.3%;
       padding: 2% 2%;
 
       @include medium {
