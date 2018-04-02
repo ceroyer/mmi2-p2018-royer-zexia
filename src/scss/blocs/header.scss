@@ -1,3 +1,44 @@
+/* BURGER */
+
+.header__burger {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 0px;
+  left: 20px;
+  border-radius: 4px;
+  z-index: 150;
+
+  span {
+    @include burger(30px, 3px, 6px, $iceberg-white); // gray
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-left: -15px;
+    margin-top: -1.5px;
+  }
+
+  &.clicked {
+    span {
+      @include burger-to-cross;
+
+      &:before, &:after {
+        background-color: $iceberg-white;
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include large {
+    display: none;
+  }
+}
+
+/* HEADER */
+
 .header {
   position: fixed;
   z-index: 100;
@@ -9,11 +50,52 @@
   background: $background;
   border-bottom: 2px solid $pastel-pink;
 
+  @include transition(all .5s ease);
+
   @include large {
     flex-direction: row;
     justify-content: space-between;
-    height: 16vh;
     border-bottom: 4px solid $pastel-pink;
+  }
+}
+
+.header--show {
+  height: 100vh;
+
+  .header__logo {
+    width: 25%;
+    height: auto;
+    margin-top: 5%;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 50%;
+    justify-content: space-evenly;
+
+    a:hover {
+      color: $pastel-pink;
+    }
+  }
+
+  .header__social {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+  }
+}
+
+.header--large {
+  @include large {
+    height: 16vh;
+  }
+}
+
+.header--small {
+  @include large {
+    height: 8vh;
   }
 }
 
@@ -48,6 +130,8 @@
 }
 
 .header__nav {
+  display: none;
+
   a{
     font-weight: bold;
     font-size: 1.1rem;
@@ -78,6 +162,8 @@
 }
 
 .header__social {
+  display: none;
+
   a{
     font-size: 2rem;
     color: white;
