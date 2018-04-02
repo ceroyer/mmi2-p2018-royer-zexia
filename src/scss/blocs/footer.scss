@@ -17,7 +17,7 @@
       width: 20%;
     }
 
-    @include medium {
+    @include large {
       width: 15%;
     }
   }
@@ -114,7 +114,7 @@
     margin-bottom: 1vh;
   }
 
-  @include medium {
+  @include large {
     flex-direction: row;
     justify-content: space-between;
 
