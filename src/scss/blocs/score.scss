@@ -1,0 +1,61 @@
+.score {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 80%;
+  width: 100%;
+  padding: 3% 1%;
+}
+
+.score__infos {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.score__infosGame {
+  filter: invert(1);
+
+  img {
+    width: 20%;
+    margin-bottom: 2%;
+  }
+}
+
+.score__infosEvent {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 2%;
+}
+
+.score__results {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.score__resultsVS {
+  color: tint($background-2,40%);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.score__resultsTeam {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 45%;
+
+  img {
+    width: 50%;
+    height: 50%;
+  }
+
+  span {
+    width: 20%;
+    font-size: 3em;
+  }
+}

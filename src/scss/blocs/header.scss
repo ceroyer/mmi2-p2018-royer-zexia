@@ -172,6 +172,10 @@
     @include large {
       margin: 0 2%;
     }
+
+    &:hover {
+      text-shadow: 3px 3px 6px $logo-pink;
+    }
   }
 
   @include large {
