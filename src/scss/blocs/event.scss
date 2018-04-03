@@ -1,4 +1,4 @@
-.event{
+.event {
   font-size: .875rem;
   background-color: $background-2;
   overflow-y:hidden;
@@ -9,7 +9,7 @@
   }
 }
 
-.event__item{
+.event__item {
   display: block;
   width: 100%;
   padding: 9px 0;
@@ -18,11 +18,11 @@
   text-overflow: ellipsis;
 }
 
-.event__itemDate{
+.event__itemDate {
   color: $pastel-pink;
 }
 
-.event__itemGame{
+.event__itemGame {
   img{
     width: auto;
     height: 16px;
@@ -30,6 +30,6 @@
   }
 }
 
-.event__itemTitle{
+.event__itemTitle {
   text-overflow: ellipsis;
 }

@@ -1,4 +1,4 @@
-.tournament{
+.tournament {
   font-size: .875rem;
   background-color: $background-2;
   overflow-y:hidden;
@@ -8,7 +8,7 @@
   }
 }
 
-.tournament__item{
+.tournament__item {
   display: block;
   width: 100%;
   padding: 9px 0;
@@ -17,7 +17,7 @@
   text-overflow: ellipsis;
 }
 
-.tournament__itemDate{
+.tournament__itemDate {
   font-variant: small-caps;
 
   &:before {
@@ -33,7 +33,7 @@
   }
 }
 
-.tournament__itemGame{
+.tournament__itemGame {
   img{
     width: auto;
     height: 16px;
@@ -41,6 +41,6 @@
   }
 }
 
-.tournament__itemTitle{
+.tournament__itemTitle {
   text-overflow: ellipsis;
 }
