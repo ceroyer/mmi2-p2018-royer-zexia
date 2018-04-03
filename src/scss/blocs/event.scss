@@ -1,6 +1,7 @@
 .event{
   font-size: .875rem;
   background-color: $background-2;
+  overflow-y:hidden;
 
   @include medium {
     width: 50%;
