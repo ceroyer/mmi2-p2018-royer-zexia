@@ -28,7 +28,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 // DEFER YOUTUBE VIDEO PARSING
 
-  let $video = "<iframe src='https://www.youtube.com/embed/UyHmyLyBm_A' allowfullscreen></iframe>";
-  document.getElementsByClassName('wrap__video')[0].innerHTML = $video;
+  function parsing() {
+    let $video = "<iframe src='https://www.youtube.com/embed/UyHmyLyBm_A' allowfullscreen></iframe>";
+    document.getElementsByClassName('wrap__video')[0].innerHTML = $video;
+  }
+  window.onload = parsing;
 
 });
